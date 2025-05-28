@@ -18,6 +18,7 @@ import datetime
 from Cyrax import Cyraxmain
 
 
+__TELEGRAM_USERNAME__ = "𝙎𝙪𝙥𝙚𝙧𝙞𝙤𝙧𝙨99"
 __CHANNEL_USERNAME__ = "𝘾𝙔𝙍𝘼𝙓 𝙏𝙀𝙍𝙈𝙐𝙓"
 __GROUP_USERNAME__   = "𝘾𝙔𝙍𝘼𝙓 𝙏𝙀𝙍𝙈𝙐𝙓"
 __CHANNEL_MENU__ = "𝘾𝙔𝙍𝘼𝙓 𝙈𝙀𝙉𝙐"
@@ -45,20 +46,20 @@ def gradient_text(text, colors):
 
 def banner(console):
     os.system('cls' if os.name == 'nt' else 'clear')
-    brand_name = figlet_format('CYRAX TOOL', font='standard')
+    brand_name = figlet_format('CYRAX TOOL', font='speed')
     colors = [
-        "rgb(255,0,0)", "rgb(255,69,0)", "rgb(255,140,0)", "rgb(255,215,0)", "rgb(255,69,0)", 
-        "rgb(255,0,0)", "rgb(255,0,0)", "rgb(255,0,0)", "rgb(255,0,0)", "rgb(255,0,0)",
+        "rgb(255,0,0)", "rgb(253,249,249)", "rgb(253,249,249)", "rgb(253,249,249)", "rgb(253,249,249)", 
+        "rgb(255,0,0)", "rgb(255,0,0)", "rgb(255,0,0)", "rgb(253,249,249)", "rgb(255,0,0)",
         "rgb(255,0,0)"
     ]
     colorful_text = gradient_text(brand_name, colors)
     console.print(colorful_text)
-    print(Colorate.Horizontal(Colors.yellow_to_red, '==============================================================='))
-    print(Colorate.Horizontal(Colors.yellow_to_red, '\t         𝐏𝐋𝐄𝐀𝐒𝐄 𝐋𝐎𝐆𝐎𝐔𝐓 𝐅𝐑𝐎𝐌 𝐂𝐏𝐌 𝐁𝐄𝐅𝐎𝐑𝐄 𝐔𝐒𝐈𝐍𝐆 𝐓𝐇𝐈𝐒 𝐓𝐎𝐎𝐋'))
-    print(Colorate.Horizontal(Colors.yellow_to_red, '    𝐒𝐇𝐀𝐑𝐈𝐍𝐆 𝐓𝐇𝐄 𝐀𝐂𝐂𝐄𝐒𝐒 𝐊𝐄𝐘 𝐈𝐒 𝐍𝐎𝐓 𝐀𝐋𝐋𝐎𝐖𝐄𝐃 𝐀𝐍𝐃 𝐖𝐈𝐋𝐋 𝐁𝐄 𝐁𝐋𝐎𝐂𝐊𝐄𝐃')) 
-    print(Colorate.Horizontal(Colors.yellow_to_red, f'      𝐂𝐎𝐍𝐓𝐀𝐂𝐓 𝐌𝐄 𝐓𝐎 𝐁𝐔𝐘 𝐔𝐍𝐋𝐈𝐌𝐈𝐓𝐄𝐃 𝐁𝐀𝐋𝐀𝐍𝐂𝐄 𝐓𝐆 @{__CHANNEL_USERNAME__}')) 
-    print(Colorate.Horizontal(Colors.yellow_to_red, f' ‌           𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦: @{__CHANNEL_USERNAME__} 𝐎𝐫 @{__GROUP_USERNAME__}'))
-    print(Colorate.Horizontal(Colors.yellow_to_red, '==============================================================='))
+    print(Colorate.Horizontal(Colors.white_to_red,'==============================================================='))
+    print(Colorate.Horizontal(Colors.white_to_red, '\t         𝐏𝐋𝐄𝐀𝐒𝐄 𝐋𝐎𝐆𝐎𝐔𝐓 𝐅𝐑𝐎𝐌 𝐂𝐏𝐌 𝐁𝐄𝐅𝐎𝐑𝐄 𝐔𝐒𝐈𝐍𝐆 𝐓𝐇𝐈𝐒 𝐓𝐎𝐎𝐋'))
+    print(Colorate.Horizontal(Colors.white_to_red, '    𝐒𝐇𝐀𝐑𝐈𝐍𝐆 𝐓𝐇𝐄 𝐀𝐂𝐂𝐄𝐒𝐒 𝐊𝐄𝐘 𝐈𝐒 𝐍𝐎𝐓 𝐀𝐋𝐋𝐎𝐖𝐄𝐃 𝐀𝐍𝐃 𝐖𝐈𝐋𝐋 𝐁𝐄 𝐁𝐋𝐎𝐂𝐊𝐄𝐃')) 
+    print(Colorate.Horizontal(Colors.white_to_red, f'      𝐂𝐎𝐍𝐓𝐀𝐂𝐓 𝐌𝐄 𝐓𝐎 𝐁𝐔𝐘 𝐔𝐍𝐋𝐈𝐌𝐈𝐓𝐄𝐃 𝐁𝐀𝐋𝐀𝐍𝐂𝐄 𝐓𝐆 @{__CHANNEL_USERNAME__}')) 
+    print(Colorate.Horizontal(Colors.white_to_red, f' ‌           𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦: @{__CHANNEL_USERNAME__} 𝐎𝐫 @{__TELEGRAM_USERNAME__}'))
+    print(Colorate.Horizontal(Colors.white_to_red, '==============================================================='))
     
     
 def load_player_data(cpm):
@@ -67,28 +68,28 @@ def load_player_data(cpm):
         data = response.get('data')
         if 'floats' in data and 'localID' in data and 'money' in data and 'coin' in data:        
             
-            print(Colorate.Horizontal(Colors.yellow_to_red, f'==========[ {__CHANNEL_USERNAME__} ]=========='))
+            print(Colorate.Horizontal(Colors.white_to_red, f'==========[ {__CHANNEL_USERNAME__} ]=========='))
             
-            print(Colorate.Horizontal(Colors.yellow_to_red, f'Name   : {(data.get("Name") if "Name" in data else "UNDEFINED")}.'))
+            print(Colorate.Horizontal(Colors.white_to_red, f'Name   : {(data.get("Name") if "Name" in data else "UNDEFINED")}.'))
                 
-            print(Colorate.Horizontal(Colors.yellow_to_red, f'LocalID: {data.get("localID")}.'))
+            print(Colorate.Horizontal(Colors.white_to_red, f'LocalID: {data.get("localID")}.'))
             
-            print(Colorate.Horizontal(Colors.yellow_to_red, f'Money  : {data.get("money")}.'))
+            print(Colorate.Horizontal(Colors.white_to_red, f'Money  : {data.get("money")}.'))
             
-            print(Colorate.Horizontal(Colors.yellow_to_red, f'Coins  : {data.get("coin")}.'))
+            print(Colorate.Horizontal(Colors.white_to_red, f'Coins  : {data.get("coin")}.'))
             
             friends_count = len(data.get("FriendsID", []))
-            print(Colorate.Horizontal(Colors.yellow_to_red, f'Friends: {friends_count}.'))
+            print(Colorate.Horizontal(Colors.white_to_red, f'Friends: {friends_count}.'))
             car_data = data.get("carIDnStatus", {}).get("carGeneratedIDs", [])
             unique_car_data = set(car_data)
             car_count = len(unique_car_data)
-            print(Colorate.Horizontal(Colors.yellow_to_red, f'Cars   : {car_count}.'))
+            print(Colorate.Horizontal(Colors.white_to_red, f'Cars   : {car_count}.'))
             
         else:
-            print(Colorate.Horizontal(Colors.yellow_to_red, '! ERROR: new accounts most be signed-in to the game at least once !.'))
+            print(Colorate.Horizontal(Colors.white_to_red, '! ERROR: new accounts most be signed-in to the game at least once !.'))
             exit(1)
     else:
-        print(Colorate.Horizontal(Colors.yellow_to_red, '! ERROR: seems like your login is not properly set !.'))
+        print(Colorate.Horizontal(Colors.white_to_red, '! ERROR: seems like your login is not properly set !.'))
         exit(1)
 
 
@@ -96,13 +97,13 @@ def load_key_data(cpm):
 
     data = cpm.get_key_data()
     
-    print(Colorate.Horizontal(Colors.yellow_to_red, f'==========[ {__CHANNEL_USERNAME__} ]=========='))
+    print(Colorate.Horizontal(Colors.white_to_red, f'==========[ {__CHANNEL_USERNAME__} ]=========='))
     
-    print(Colorate.Horizontal(Colors.yellow_to_red, f'Access Key : {data.get("access_key")}.'))
+    print(Colorate.Horizontal(Colors.white_to_red, f'Access Key : {data.get("access_key")}.'))
     
-    print(Colorate.Horizontal(Colors.yellow_to_red, f'Telegram ID: {data.get("telegram_id")}.'))
+    print(Colorate.Horizontal(Colors.white_to_red, f'Telegram ID: {data.get("telegram_id")}.'))
     
-    print(Colorate.Horizontal(Colors.yellow_to_red, f'Balance    : {(data.get("coins") if not data.get("is_unlimited") else " Unlimited")}.'))
+    print(Colorate.Horizontal(Colors.white_to_red, f'Balance    : {(data.get("coins") if not data.get("is_unlimited") else " Unlimited")}.'))
         
     
 
@@ -117,11 +118,11 @@ def prompt_valid_value(content, tag, password=False):
 def load_client_details():
     response = requests.get("http://ip-api.com/json")
     data = response.json()
-    print(Colorate.Horizontal(Colors.yellow_to_red, f'==========[ {__CHANNEL_USERNAME__} ]=========='))
-    print(Colorate.Horizontal(Colors.yellow_to_red, f'Ip Address : {data.get("query")}.'))
-    print(Colorate.Horizontal(Colors.yellow_to_red, f'Location   : {data.get("city")} {data.get("regionName")} {data.get("countryCode")}.'))
-    print(Colorate.Horizontal(Colors.yellow_to_red, f'Country    : {data.get("country")} {data.get("zip")}.'))
-    print(Colorate.Horizontal(Colors.yellow_to_red, f'==========[ {__CHANNEL_MENU__} ]=========='))
+    print(Colorate.Horizontal(Colors.white_to_red, f'==========[ {__CHANNEL_USERNAME__} ]=========='))
+    print(Colorate.Horizontal(Colors.white_to_red, f'Ip Address : {data.get("query")}.'))
+    print(Colorate.Horizontal(Colors.white_to_red, f'Location   : {data.get("city")} {data.get("regionName")} {data.get("countryCode")}.'))
+    print(Colorate.Horizontal(Colors.white_to_red, f'Country    : {data.get("country")} {data.get("zip")}.'))
+    print(Colorate.Horizontal(Colors.white_to_red, f'==========[ {__CHANNEL_MENU__} ]=========='))
 
 def interpolate_color(start_color, end_color, fraction):
     start_rgb = tuple(int(start_color[i:i+2], 16) for i in (1, 3, 5))
@@ -153,7 +154,7 @@ if __name__ == "__main__":
         login_response = cpm.login(acc_email, acc_password)
         if login_response != 0:
             if login_response == 100:
-                print(Colorate.Horizontal(Colors.yellow_to_red, 'ACCOUNT NOT FOUND.'))
+                print(Colorate.Horizontal(Colors.white_to_red, 'ACCOUNT NOT FOUND.'))
                 sleep(2)
                 continue
             elif login_response == 101:
@@ -161,16 +162,16 @@ if __name__ == "__main__":
                 sleep(2)
                 continue
             elif login_response == 103:
-                print(Colorate.Horizontal(Colors.yellow_to_red, 'INVALID ACCESS KEY.'))
+                print(Colorate.Horizontal(Colors.white_to_red, 'INVALID ACCESS KEY.'))
                 sleep(2)
                 continue
             else:
-                print(Colorate.Horizontal(Colors.yellow_to_red, 'TRY AGAIN.'))
-                print(Colorate.Horizontal(Colors.yellow_to_red, '! Note: make sure you filled out the fields !.'))
+                print(Colorate.Horizontal(Colors.white_to_red, 'TRY AGAIN.'))
+                print(Colorate.Horizontal(Colors.white_to_red, '! Note: make sure you filled out the fields !.'))
                 sleep(2)
                 continue
         else:
-            print(Colorate.Horizontal(Colors.yellow_to_red, 'SUCCESSFUL.'))
+            print(Colorate.Horizontal(Colors.white_to_red, 'SUCCESSFUL.'))
             sleep(2)
         while True:
             banner(console)
@@ -178,89 +179,89 @@ if __name__ == "__main__":
             load_key_data(cpm)
             load_client_details()
             choices = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32"]
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{01}: Increase Money           1.500'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{02}: Increase Coins           4.500'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{03}: King Rank                8.000'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{04}: Change ID                4.500'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{05}: Change Name              100'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{06}: Change Name (Rainbow)    100'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{07}: Number Plates            2.000'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{08}: Account Delete           FREE'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{09}: Account Register         FREE'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{10}: Delete Friends           500'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{11}: Unlock Paid Cars         5.000'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{12}: Unlock all Cars          6.000'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{13}: Unlock all Cars Siren    3.500'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{14}: Unlock w16 Engine        4.000'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{15}: Unlock All Horns         3.000'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{16}: Unlock Disable Damage    3.000'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{17}: Unlock Unlimited Fuel    3.000'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{18}: Unlock House 3           4.000'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{19}: Unlock Smoke             4.000'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{20}: Unlock Wheels            4.000'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{21}: Unlock Animations        2.000'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{22}: Unlock Equipaments M     3.000'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{23}: Unlock Equipaments F     3.000'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{24}: Change Race Wins         1.000'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{25}: Change Race Loses        1.000'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{26}: Clone Account            7.000'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{27}: Custom HP                2.500'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{28}: Custom Angle             1.500'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{29}: Custom Tire burner       1.500'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{30}: Custom Car Millage       2.000'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{31}: Custom Car Brake         2.000'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{32}: Login Another Account    FREE'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{0} : Exit From CYRAX Menu     FREE'))
+            print(Colorate.Horizontal(Colors.white_to_red, '{01}: Increase Money           1.500'))
+            print(Colorate.Horizontal(Colors.white_to_red, '{02}: Increase Coins           4.500'))
+            print(Colorate.Horizontal(Colors.white_to_red, '{03}: King Rank                8.000'))
+            print(Colorate.Horizontal(Colors.white_to_red, '{04}: Change ID                4.500'))
+            print(Colorate.Horizontal(Colors.white_to_red, '{05}: Change Name              100'))
+            print(Colorate.Horizontal(Colors.white_to_red, '{06}: Change Name (Rainbow)    100'))
+            print(Colorate.Horizontal(Colors.white_to_red, '{07}: Number Plates            2.000'))
+            print(Colorate.Horizontal(Colors.white_to_red, '{08}: Account Delete           FREE'))
+            print(Colorate.Horizontal(Colors.white_to_red, '{09}: Account Register         FREE'))
+            print(Colorate.Horizontal(Colors.white_to_red, '{10}: Delete Friends           500'))
+            print(Colorate.Horizontal(Colors.white_to_red, '{11}: Unlock Paid Cars         5.000'))
+            print(Colorate.Horizontal(Colors.white_to_red, '{12}: Unlock all Cars          6.000'))
+            print(Colorate.Horizontal(Colors.white_to_red, '{13}: Unlock all Cars Siren    3.500'))
+            print(Colorate.Horizontal(Colors.white_to_red, '{14}: Unlock w16 Engine        4.000'))
+            print(Colorate.Horizontal(Colors.white_to_red, '{15}: Unlock All Horns         3.000'))
+            print(Colorate.Horizontal(Colors.white_to_red, '{16}: Unlock Disable Damage    3.000'))
+            print(Colorate.Horizontal(Colors.white_to_red, '{17}: Unlock Unlimited Fuel    3.000'))
+            print(Colorate.Horizontal(Colors.white_to_red, '{18}: Unlock House 3           4.000'))
+            print(Colorate.Horizontal(Colors.white_to_red, '{19}: Unlock Smoke             4.000'))
+            print(Colorate.Horizontal(Colors.white_to_red, '{20}: Unlock Wheels            4.000'))
+            print(Colorate.Horizontal(Colors.white_to_red, '{21}: Unlock Animations        2.000'))
+            print(Colorate.Horizontal(Colors.white_to_red, '{22}: Unlock Equipaments M     3.000'))
+            print(Colorate.Horizontal(Colors.white_to_red, '{23}: Unlock Equipaments F     3.000'))
+            print(Colorate.Horizontal(Colors.white_to_red, '{24}: Change Race Wins         1.000'))
+            print(Colorate.Horizontal(Colors.white_to_red, '{25}: Change Race Loses        1.000'))
+            print(Colorate.Horizontal(Colors.white_to_red, '{26}: Clone Account            7.000'))
+            print(Colorate.Horizontal(Colors.white_to_red, '{27}: Custom HP                2.500'))
+            print(Colorate.Horizontal(Colors.white_to_red, '{28}: Custom Angle             1.500'))
+            print(Colorate.Horizontal(Colors.white_to_red, '{29}: Custom Tire burner       1.500'))
+            print(Colorate.Horizontal(Colors.white_to_red, '{30}: Custom Car Millage       2.000'))
+            print(Colorate.Horizontal(Colors.white_to_red, '{31}: Custom Car Brake         2.000'))
+            print(Colorate.Horizontal(Colors.white_to_red, '{32}: Login Another Account    FREE'))
+            print(Colorate.Horizontal(Colors.white_to_red, '{0} : Exit From CYRAX Menu     FREE'))
             
-            print(Colorate.Horizontal(Colors.yellow_to_red, f'==========[ {__CHANNEL_USERNAME__} ]=========='))
+            print(Colorate.Horizontal(Colors.white_to_red, f'==========[ {__CHANNEL_USERNAME__} ]=========='))
             
             service = IntPrompt.ask(f"[bold][?] Select a Service [red][1-{choices[-1]} or 0][/red][/bold]", choices=choices, show_choices=False)
             
-            print(Colorate.Horizontal(Colors.yellow_to_red, f'==========[ {__CHANNEL_USERNAME__} ]=========='))
+            print(Colorate.Horizontal(Colors.white_to_red, f'==========[ {__CHANNEL_USERNAME__} ]=========='))
             
             if service == 0: # Exit
-                print(Colorate.Horizontal(Colors.yellow_to_red, f'Thank You for using our tool, please join our telegram channel: @{__CHANNEL_USERNAME__}.'))
+                print(Colorate.Horizontal(Colors.white_to_red, f'Thank You for using our tool, please join our telegram channel: @{__CHANNEL_USERNAME__}.'))
                 
             elif service == 1: # Increase Money
-                print(Colorate.Horizontal(Colors.yellow_to_red, '[?] Insert how much money do you want.'))
+                print(Colorate.Horizontal(Colors.white_to_red, '[?] Insert how much money do you want.'))
                 amount = IntPrompt.ask("[?] Amount")
                 console.print("[%] Saving your data: ", end=None)
                 if amount > 0 and amount <= 500000000000000000000000000000000:
                     if cpm.set_player_money(amount):
-                        print(Colorate.Horizontal(Colors.yellow_to_red, 'SUCCESSFUL'))
-                        print(Colorate.Horizontal(Colors.yellow_to_red, '======================================'))
+                        print(Colorate.Horizontal(Colors.white_to_red, 'SUCCESSFUL'))
+                        print(Colorate.Horizontal(Colors.white_to_red, '======================================'))
                         answ = Prompt.ask("[?] Do You want to Exit ?", choices=["y", "n"], default="n")
                         if answ == "y": print(Colorate.Horizontal(Colors.rainbow, f'Thank You for using our tool, please join our telegram channe: @{__CHANNEL_USERNAME__}.'))
                         else: continue
                     else:
-                        print(Colorate.Horizontal(Colors.yellow_to_red, 'FAILED.'))
-                        print(Colorate.Horizontal(Colors.yellow_to_red, 'Please try again.'))
+                        print(Colorate.Horizontal(Colors.white_to_red, 'FAILED.'))
+                        print(Colorate.Horizontal(Colors.white_to_red, 'Please try again.'))
                         sleep(2)
                         continue
                 else:
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'FAILED.'))
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'Please use valid values.'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'FAILED.'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'Please use valid values.'))
                     sleep(2)
                     continue
             elif service == 2: # Increase Coins
-                print(Colorate.Horizontal(Colors.yellow_to_red, '[?] Insert how much coins do you want.'))
+                print(Colorate.Horizontal(Colors.white_to_red, '[?] Insert how much coins do you want.'))
                 amount = IntPrompt.ask("[?] Amount")
                 console.print("[%] Saving your data: ", end=None)
                 if amount > 0 and amount <= 500000000000000:
                     if cpm.set_player_coins(amount):
-                        print(Colorate.Horizontal(Colors.yellow_to_red, 'SUCCESSFUL'))
-                        print(Colorate.Horizontal(Colors.yellow_to_red, '======================================'))
+                        print(Colorate.Horizontal(Colors.white_to_red, 'SUCCESSFUL'))
+                        print(Colorate.Horizontal(Colors.white_to_red, '======================================'))
                         answ = Prompt.ask("[?] Do You want to Exit ?", choices=["y", "n"], default="n")
                         if answ == "y": print(Colorate.Horizontal(Colors.rainbow, f'Thank You for using our tool, please join our telegram channe: @{__CHANNEL_USERNAME__}.'))
                         else: continue
                     else:
-                        print(Colorate.Horizontal(Colors.yellow_to_red, 'FAILED.'))
-                        print(Colorate.Horizontal(Colors.yellow_to_red, 'Please try again.'))
+                        print(Colorate.Horizontal(Colors.white_to_red, 'FAILED.'))
+                        print(Colorate.Horizontal(Colors.white_to_red, 'Please try again.'))
                         sleep(2)
                         continue
                 else:
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'FAILED.'))
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'Please use valid values.'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'FAILED.'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'Please use valid values.'))
                     sleep(2)
                     continue
             elif service == 3: # King Rank
@@ -269,240 +270,240 @@ if __name__ == "__main__":
                 sleep(2)
                 console.print("[%] Giving you a King Rank: ", end=None)
                 if cpm.set_player_rank():
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'SUCCESSFUL'))
-                    print(Colorate.Horizontal(Colors.yellow_to_red, '======================================'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'SUCCESSFUL'))
+                    print(Colorate.Horizontal(Colors.white_to_red, '======================================'))
                     answ = Prompt.ask("[?] Do You want to Exit ?", choices=["y", "n"], default="n")
-                    if answ == "y": print(Colorate.Horizontal(Colors.rainbow, f'Thank You for using our tool, please join our telegram channe: @{__CHANNEL_USERNAME__}.'))
+                    if answ == "y": print(Colorate.Horizontal(Colors.white_to_red, f'Thank You for using our tool, please join our telegram channe: @{__CHANNEL_USERNAME__}.'))
                     else: continue
                 else:
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'FAILED.'))
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'Please try again.'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'FAILED.'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'Please try again.'))
                     sleep(2)
                     continue
             elif service == 4: # Change ID
-                print(Colorate.Horizontal(Colors.yellow_to_red, '[?] Enter your new ID.'))
+                print(Colorate.Horizontal(Colors.white_to_red, '[?] Enter your new ID.'))
                 new_id = Prompt.ask("[?] ID")
                 console.print("[%] Saving your data: ", end=None)
                 if len(new_id) >= 0 and len(new_id) <= 9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999 and (' ' in new_id) == False:
                     if cpm.set_player_localid(new_id.upper()):
-                        print(Colorate.Horizontal(Colors.yellow_to_red, 'SUCCESSFUL'))
-                        print(Colorate.Horizontal(Colors.yellow_to_red, '======================================'))
+                        print(Colorate.Horizontal(Colors.white_to_red, 'SUCCESSFUL'))
+                        print(Colorate.Horizontal(Colors.white_to_red, '======================================'))
                         answ = Prompt.ask("[?] Do You want to Exit ?", choices=["y", "n"], default="n")
                         if answ == "y": print(Colorate.Horizontal(Colors.rainbow, f'Thank You for using our tool, please join our telegram channe: @{__CHANNEL_USERNAME__}.'))
                         else: continue
                     else:
-                        print(Colorate.Horizontal(Colors.yellow_to_red, 'FAILED.'))
-                        print(Colorate.Horizontal(Colors.yellow_to_red, 'Please try again.'))
+                        print(Colorate.Horizontal(Colors.white_to_red, 'FAILED.'))
+                        print(Colorate.Horizontal(Colors.white_to_red, 'Please try again.'))
                         sleep(2)
                         continue
                 else:
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'FAILED.'))
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'Please use valid ID.'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'FAILED.'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'Please use valid ID.'))
                     sleep(2)
                     continue
             elif service == 5: # Change Name
-                print(Colorate.Horizontal(Colors.yellow_to_red, '[?] Enter your new Name.'))
+                print(Colorate.Horizontal(Colors.white_to_red, '[?] Enter your new Name.'))
                 new_name = Prompt.ask("[?] Name")
                 console.print("[%] Saving your data: ", end=None)
                 if len(new_name) >= 0 and len(new_name) <= 999999999:
                     if cpm.set_player_name(new_name):
-                        print(Colorate.Horizontal(Colors.yellow_to_red, 'SUCCESSFUL'))
-                        print(Colorate.Horizontal(Colors.yellow_to_red, '======================================'))
+                        print(Colorate.Horizontal(Colors.white_to_red, 'SUCCESSFUL'))
+                        print(Colorate.Horizontal(Colors.white_to_red, '======================================'))
                         answ = Prompt.ask("[?] Do You want to Exit ?", choices=["y", "n"], default="n")
-                        if answ == "y": print(Colorate.Horizontal(Colors.rainbow, f'Thank You for using our tool, please join our telegram channe: @{__CHANNEL_USERNAME__}.'))
+                        if answ == "y": print(Colorate.Horizontal(Colors.white_to_red, f'Thank You for using our tool, please join our telegram channe: @{__CHANNEL_USERNAME__}.'))
                         else: continue
                     else:
-                        print(Colorate.Horizontal(Colors.yellow_to_red, 'FAILED.'))
-                        print(Colorate.Horizontal(Colors.yellow_to_red, 'Please try again.'))
+                        print(Colorate.Horizontal(Colors.white_to_red, 'FAILED.'))
+                        print(Colorate.Horizontal(Colors.white_to_red, 'Please try again.'))
                         sleep(2)
                         continue
                 else:
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'FAILED.'))
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'Please use valid values.'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'FAILED.'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'Please use valid values.'))
                     sleep(2)
                     continue
             elif service == 6: # Change Name Rainbow
-                print(Colorate.Horizontal(Colors.yellow_to_red, '[?] Enter your new Rainbow Name.'))
+                print(Colorate.Horizontal(Colors.white_to_red, '[?] Enter your new Rainbow Name.'))
                 new_name = Prompt.ask("[?] Name")
                 console.print("[%] Saving your data: ", end=None)
                 if len(new_name) >= 0 and len(new_name) <= 999999999:
                     if cpm.set_player_name(rainbow_gradient_string(new_name)):
-                        print(Colorate.Horizontal(Colors.yellow_to_red, 'SUCCESSFUL'))
-                        print(Colorate.Horizontal(Colors.yellow_to_red, '======================================'))
+                        print(Colorate.Horizontal(Colors.white_to_red, 'SUCCESSFUL'))
+                        print(Colorate.Horizontal(Colors.white_to_red, '======================================'))
                         answ = Prompt.ask("[?] Do You want to Exit ?", choices=["y", "n"], default="n")
                         if answ == "y": print(Colorate.Horizontal(Colors.rainbow, f'Thank You for using our tool, please join our telegram channe: @{__CHANNEL_USERNAME__}.'))
                         else: continue
                     else:
-                        print(Colorate.Horizontal(Colors.yellow_to_red, 'FAILED.'))
-                        print(Colorate.Horizontal(Colors.yellow_to_red, 'Please try again.'))
+                        print(Colorate.Horizontal(Colors.white_to_red, 'FAILED.'))
+                        print(Colorate.Horizontal(Colors.white_to_red, 'Please try again.'))
                         sleep(2)
                         continue
                 else:
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'FAILED.'))
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'Please use valid values.'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'FAILED.'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'Please use valid values.'))
                     sleep(2)
                     continue
             elif service == 7: # Number Plates
                 console.print("[%] Giving you a Number Plates: ", end=None)
                 if cpm.set_player_plates():
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'SUCCESSFUL'))
-                    print(Colorate.Horizontal(Colors.yellow_to_red, '======================================'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'SUCCESSFUL'))
+                    print(Colorate.Horizontal(Colors.white_to_red, '======================================'))
                     answ = Prompt.ask("[?] Do You want to Exit ?", choices=["y", "n"], default="n")
-                    if answ == "y": print(Colorate.Horizontal(Colors.yellow_to_red, f'Thank You for using our tool, please join our telegram channe: @{__CHANNEL_USERNAME__}.'))
+                    if answ == "y": print(Colorate.Horizontal(Colors.white_to_red, f'Thank You for using our tool, please join our telegram channe: @{__CHANNEL_USERNAME__}.'))
                     else: continue
                 else:
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'FAILED.'))
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'Please try again.'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'FAILED.'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'Please try again.'))
                     sleep(2)
                     continue
             elif service == 8: # Account Delete
-                print(Colorate.Horizontal(Colors.yellow_to_red, '[!] After deleting your account there is no going back !!.'))
+                print(Colorate.Horizontal(Colors.white_to_red, '[!] After deleting your account there is no going back !!.'))
                 answ = Prompt.ask("[?] Do You want to Delete this Account ?!", choices=["y", "n"], default="n")
                 if answ == "y":
                     cpm.delete()
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'SUCCESSFUL'))
-                    print(Colorate.Horizontal(Colors.yellow_to_red, '======================================'))
-                    print(Colorate.Horizontal(Colors.yellow_to_red, f'Thank You for using our tool, please join our telegram channe: @{__CHANNEL_USERNAME__}.'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'SUCCESSFUL'))
+                    print(Colorate.Horizontal(Colors.white_to_red, '======================================'))
+                    print(Colorate.Horizontal(Colors.white_to_red, f'Thank You for using our tool, please join our telegram channe: @{__CHANNEL_USERNAME__}.'))
                 else: continue
             elif service == 9: # Account Register
-                print(Colorate.Horizontal(Colors.yellow_to_red, '[!] Registring new Account.'))
+                print(Colorate.Horizontal(Colors.white_to_red, '[!] Registring new Account.'))
                 acc2_email = prompt_valid_value("[?] Account Email", "Email", password=False)
                 acc2_password = prompt_valid_value("[?] Account Password", "Password", password=False)
                 console.print("[%] Creating new Account: ", end=None)
                 status = cpm.register(acc2_email, acc2_password)
                 if status == 0:
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'SUCCESSFUL'))
-                    print(Colorate.Horizontal(Colors.yellow_to_red, '======================================'))
-                    print(Colorate.Horizontal(Colors.yellow_to_red, f'INFO: In order to tweak this account with CPMElsedev.'))
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'you most sign-in to the game using this account.'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'SUCCESSFUL'))
+                    print(Colorate.Horizontal(Colors.white_to_red, '======================================'))
+                    print(Colorate.Horizontal(Colors.white_to_red, f'INFO: In order to tweak this account with CPMElsedev.'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'you most sign-in to the game using this account.'))
                     sleep(2)
                     continue
                 elif status == 105:
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'FAILED.'))
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'This email is already exists !.'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'FAILED.'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'This email is already exists !.'))
                     sleep(2)
                     continue
                 else:
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'FAILED.'))
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'Please try again.'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'FAILED.'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'Please try again.'))
                     sleep(2)
                     continue
             elif service == 10: # Delete Friends
                 console.print("[%] Deleting your Friends: ", end=None)
                 if cpm.delete_player_friends():
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'SUCCESSFUL'))
-                    print(Colorate.Horizontal(Colors.yellow_to_red, '======================================'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'SUCCESSFUL'))
+                    print(Colorate.Horizontal(Colors.white_to_red, '======================================'))
                     answ = Prompt.ask("[?] Do You want to Exit ?", choices=["y", "n"], default="n")
                     if answ == "y": print(Colorate.Horizontal(Colors.yellow_to_red, f'Thank You for using our tool, please join our telegram channe: @{__CHANNEL_USERNAME__}.'))
                     else: continue
                 else:
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'FAILED.'))
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'Please try again.'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'FAILED.'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'Please try again.'))
                     sleep(2)
                     continue
             elif service == 11: # Unlock All Paid Cars
                 console.print("[!] Note: this function takes a while to complete, please don't cancel.", end=None)
                 console.print("[%] Unlocking All Paid Cars: ", end=None)
                 if cpm.unlock_paid_cars():
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'SUCCESSFUL'))
-                    print(Colorate.Horizontal(Colors.yellow_to_red, '======================================'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'SUCCESSFUL'))
+                    print(Colorate.Horizontal(Colors.white_to_red, '======================================'))
                     answ = Prompt.ask("[?] Do You want to Exit ?", choices=["y", "n"], default="n")
                     if answ == "y": print(Colorate.Horizontal(Colors.rainbow, f'Thank You for using our tool, please join our telegram channe: @{__CHANNEL_USERNAME__}.'))
                     else: continue
                 else:
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'FAILED.'))
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'Please try again.'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'FAILED.'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'Please try again.'))
                     sleep(2)
                     continue
             elif service == 12: # Unlock All Cars
                 console.print("[%] Unlocking All Cars: ", end=None)
                 if cpm.unlock_all_cars():
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'SUCCESSFUL'))
-                    print(Colorate.Horizontal(Colors.yellow_to_red, '======================================'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'SUCCESSFUL'))
+                    print(Colorate.Horizontal(Colors.white_to_red, '======================================'))
                     answ = Prompt.ask("[?] Do You want to Exit ?", choices=["y", "n"], default="n")
                     if answ == "y": print(Colorate.Horizontal(Colors.rainbow, f'Thank You for using our tool, please join our telegram channe: @{__CHANNEL_USERNAME__}.'))
                     else: continue
                 else:
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'FAILED.'))
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'Please try again.'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'FAILED.'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'Please try again.'))
                     sleep(2)
                     continue
             elif service == 13: # Unlock All Cars Siren
                 console.print("[%] Unlocking All Cars Siren: ", end=None)
                 if cpm.unlock_all_cars_siren():
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'SUCCESSFUL'))
-                    print(Colorate.Horizontal(Colors.yellow_to_red, '======================================'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'SUCCESSFUL'))
+                    print(Colorate.Horizontal(Colors.white_to_red, '======================================'))
                     answ = Prompt.ask("[?] Do You want to Exit ?", choices=["y", "n"], default="n")
                     if answ == "y": print(Colorate.Horizontal(Colors.yellow_to_red, f'Thank You for using our tool, please join our telegram channe: @{__CHANNEL_USERNAME__}.'))
                     else: continue
                 else:
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'FAILED.'))
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'Please try again.'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'FAILED.'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'Please try again.'))
                     sleep(2)
                     continue
             elif service == 14: # Unlock w16 Engine
                 console.print("[%] Unlocking w16 Engine: ", end=None)
                 if cpm.unlock_w16():
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'SUCCESSFUL'))
-                    print(Colorate.Horizontal(Colors.yellow_to_red, '======================================'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'SUCCESSFUL'))
+                    print(Colorate.Horizontal(Colors.white_to_red, '======================================'))
                     answ = Prompt.ask("[?] Do You want to Exit ?", choices=["y", "n"], default="n")
                     if answ == "y": print(Colorate.Horizontal(Colors.yellow_to_red, f'Thank You for using our tool, please join our telegram channe: @{__CHANNEL_USERNAME__}.'))
                     else: continue
                 else:
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'FAILED.'))
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'Please try again.'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'FAILED.'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'Please try again.'))
                     sleep(2)
                     continue
             elif service == 15: # Unlock All Horns
                 console.print("[%] Unlocking All Horns: ", end=None)
                 if cpm.unlock_horns():
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'SUCCESSFUL'))
-                    print(Colorate.Horizontal(Colors.yellow_to_red, '======================================'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'SUCCESSFUL'))
+                    print(Colorate.Horizontal(Colors.white_to_red, '======================================'))
                     answ = Prompt.ask("[?] Do You want to Exit ?", choices=["y", "n"], default="n")
-                    if answ == "y": print(Colorate.Horizontal(Colors.yellow_to_red, f'Thank You for using our tool, please join our telegram channe: @{__CHANNEL_USERNAME__}.'))
+                    if answ == "y": print(Colorate.Horizontal(Colors.white_to_red, f'Thank You for using our tool, please join our telegram channe: @{__CHANNEL_USERNAME__}.'))
                     else: continue
                 else:
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'FAILED.'))
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'Please try again.'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'FAILED.'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'Please try again.'))
                     sleep(2)
                     continue
             elif service == 16: # Disable Engine Damage
                 console.print("[%] Unlocking Disable Damage: ", end=None)
                 if cpm.disable_engine_damage():
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'SUCCESSFUL'))
-                    print(Colorate.Horizontal(Colors.yellow_to_red, '======================================'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'SUCCESSFUL'))
+                    print(Colorate.Horizontal(Colors.white_to_red, '======================================'))
                     answ = Prompt.ask("[?] Do You want to Exit ?", choices=["y", "n"], default="n")
-                    if answ == "y": print(Colorate.Horizontal(Colors.yellow_to_red, f'Thank You for using our tool, please join our telegram channe: @{__CHANNEL_USERNAME__}.'))
+                    if answ == "y": print(Colorate.Horizontal(Colors.white_to_red, f'Thank You for using our tool, please join our telegram channe: @{__CHANNEL_USERNAME__}.'))
                     else: continue
                 else:
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'FAILED.'))
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'Please try again.'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'FAILED.'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'Please try again.'))
                     sleep(2)
                     continue
             elif service == 17: # Unlimited Fuel
                 console.print("[%] Unlocking Unlimited Fuel: ", end=None)
                 if cpm.unlimited_fuel():
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'SUCCESSFUL'))
-                    print(Colorate.Horizontal(Colors.yellow_to_red, '======================================'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'SUCCESSFUL'))
+                    print(Colorate.Horizontal(Colors.white_to_red, '======================================'))
                     answ = Prompt.ask("[?] Do You want to Exit ?", choices=["y", "n"], default="n")
-                    if answ == "y": print(Colorate.Horizontal(Colors.yellow_to_red, f'Thank You for using our tool, please join our telegram channe: @{__CHANNEL_USERNAME__}.'))
+                    if answ == "y": print(Colorate.Horizontal(Colors.white_to_red, f'Thank You for using our tool, please join our telegram channe: @{__CHANNEL_USERNAME__}.'))
                     else: continue
                 else:
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'FAILED.'))
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'Please try again.'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'FAILED.'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'Please try again.'))
                     sleep(2)
                     continue
             elif service == 18: # Unlock House 3
                 console.print("[%] Unlocking House 3: ", end=None)
                 if cpm.unlock_houses():
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'SUCCESSFUL'))
-                    print(Colorate.Horizontal(Colors.yellow_to_red, '======================================'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'SUCCESSFUL'))
+                    print(Colorate.Horizontal(Colors.white_to_red, '======================================'))
                     answ = Prompt.ask("[?] Do You want to Exit ?", choices=["y", "n"], default="n")
                     if answ == "y": print(Colorate.Horizontal(Colors.rainbow, f'Thank You for using our tool, please join our telegram channe: @{__CHANNEL_USERNAME__}.'))
                     else: continue
                 else:
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'FAILED.'))
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'Please try again.'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'FAILED.'))
+                    print(Colorate.Horizontal(Colors.white_to_red, 'Please try again.'))
                     sleep(2)
                     continue
             elif service == 19: # Unlock Smoke
